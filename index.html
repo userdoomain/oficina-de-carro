@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Prime — Oficina de Carros Especializada</title>
+  <meta name="description" content="Garagem Prime é a sua oficina de carros de confiança. Diagnóstico computadorizado, manutenção preventiva e reparos com garantia de 12 meses. Agende agora!">
+  <meta name="author" content="Garagem Prime">
+  <meta property="og:title" content="Garagem Prime — Oficina de Carros Especializada">
+  <meta property="og:description" content="Diagnóstico computadorizado, manutenção preventiva e reparos com garantia de 12 meses.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6a13'/%3E%3Cpath d='M14 40l4-10a4 4 0 0 1 3.7-2.5h8.6L36 20h6l4.3 7.5H46l5.5 2.6a4 4 0 0 1 2.4 3.7V42h-6' fill='none' stroke='%230b0e14' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='21' cy='42' r='4.5' fill='%230b0e14'/%3E%3Ccircle cx='43' cy='42' r='4.5' fill='%230b0e14'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Garagem Prime — início">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#ff6a13"/>
+          <path d="M14 40l4-10a4 4 0 0 1 3.7-2.5h8.6L36 20h6l4.3 7.5H46l5.5 2.6a4 4 0 0 1 2.4 3.7V42h-6" fill="none" stroke="#0b0e14" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="21" cy="42" r="4.5" fill="#0b0e14"/>
+          <circle cx="43" cy="42" r="4.5" fill="#0b0e14"/>
+        </svg>
+        <span class="brand-text">Garagem<strong>Prime</strong></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" >
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#processo" class="nav-link">Processo</a></li>
+        <li><a href="#precos" class="nav-link">Preços</a></li>
+        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-accent btn-sm nav-cta" href="#contato">Agendar serviço</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow reveal">Desde 2010 · Especialistas em <span class="text-accent">veículos nacionais e importados</span></p>
+          <h1 class="hero-title reveal">Seu carro tratado <span class="text-accent">como se fosse</span> nosso.</h1>
+          <p class="hero-sub reveal">Diagnóstico computadorizado, mão de obra certificada e garantia de 12 meses em todos os reparos. Orçamento transparente antes de qualquer serviço.</p>
+          <div class="hero-actions reveal">
+            <a href="#contato" class="btn btn-accent">Agendar diagnóstico</a>
+            <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+          </div>
+          <ul class="hero-badges reveal" >
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg> 4.9 no Google</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg> 98% satisfação</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg> Garantia de 12 meses</li>
+          </ul>
+        </div>
+
+        <div class="hero-art reveal">
+          <figure class="hero-photo-frame">
+            <img class="hero-photo" src="img/hero-mecanico.jpg" alt="Mecânico consertando o motor de um carro em oficina mecânica" fetchpriority="high">
+            <figcaption class="hero-photo-tag">MOTOR · MANUTENÇÃO PREVENTIVA</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container stats-bar reveal">
+        <div class="stat">
+          <span class="stat-value" data-count="12" data-suffix="k+">0</span>
+          <span class="stat-label">veículos atendidos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="15" data-suffix=" anos">0</span>
+          <span class="stat-label">de experiência</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="98" data-suffix="%">0</span>
+          <span class="stat-label">clientes satisfeitos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="12" data-suffix=" meses">0</span>
+          <span class="stat-label">de garantia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARCAS ATENDIDAS ===== -->
+    <section class="brands-strip" aria-label="Marcas atendidas">
+      <div class="container">
+        <p class="brands-label reveal">Trabalhamos com as principais marcas do mercado — nacionais e importadas</p>
+      </div>
+      <div class="brands-marquee reveal" aria-hidden="true">
+        <div class="brands-track">
+          <span>Volkswagen</span><span>Fiat</span><span>Chevrolet</span><span>Ford</span><span>Toyota</span><span>Honda</span><span>Hyundai</span><span>Renault</span><span>Peugeot</span><span>Citroën</span><span>Nissan</span><span>Jeep</span><span>Kia</span><span>Mitsubishi</span><span>BMW</span><span>Mercedes-Benz</span><span>Volvo</span>
+          <span>Volkswagen</span><span>Fiat</span><span>Chevrolet</span><span>Ford</span><span>Toyota</span><span>Honda</span><span>Hyundai</span><span>Renault</span><span>Peugeot</span><span>Citroën</span><span>Nissan</span><span>Jeep</span><span>Kia</span><span>Mitsubishi</span><span>BMW</span><span>Mercedes-Benz</span><span>Volvo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nossos serviços</p>
+          <h2 class="section-title" id="servicos-title">Cuidamos de <span class="text-accent">tudo</span> pelo seu carro</h2>
+          <p class="section-sub">Tecnologia de ponta aliada a mão de obra especializada para cada sistema do seu veículo.</p>
+        </div>
+
+        <div class="grid services-grid">
+          <article class="card service-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 3l2.5 5 4.5 1-3.5 3.4.7 4.6-4.2-2.2-4.2 2.2.7-4.6L2 9l4.5-1z"/><path d="M19 13l1 2 1.8.4-1.4 1.4.3 1.8-1.7-.9-1.7.9.3-1.8-1.4-1.4L18 15z" fill="none"/></svg>
+            </span>
+            <h3>Diagnóstico computadorizado</h3>
+            <p>Leitura de módulos e scanners para identificar falhas com precisão, sem achismo.</p>
+            <p class="service-price">Diagnóstico completo <strong>R$ 49</strong></p>
+            <a href="#contato" class="card-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <h3>Manutenção preventiva</h3>
+            <p>Planos periódicos que aumentam a vida útil do motor e evitam surpresas.</p>
+            <p class="service-price">Período completo <strong>R$ 149</strong></p>
+            <a href="#contato" class="card-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 15.2l-3.4-3.4 1.4-1.4 2 2 5.4-5.4 1.4 1.4z"/></svg>
+            </span>
+            <h3>Freios e suspensão</h3>
+            <p>Pastilhas, discos, amortecedores e alinhamento com segurança certificada.</p>
+            <p class="service-price">Alinhamento <strong>R$ 79</strong> · Balanceamento <strong>R$ 49</strong></p>
+            <a href="#contato" class="card-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/></svg>
+            </span>
+            <h3>Motor e transmissão</h3>
+            <p>Revisões, retíficas e trocas com peças originais ou certificadas.</p>
+            <p class="service-price">Orçamento <strong>sob consulta</strong> com laudo técnico</p>
+            <a href="#contato" class="card-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 15v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/><path d="M2 11l2-6h16l2 6z"/><circle cx="7" cy="13" r="1.6"/><circle cx="17" cy="13" r="1.6"/></svg>
+            </span>
+            <h3>Elétrica e injeção</h3>
+            <p>Partida, alternador, chicotes e limpeza de bicos para desempenho ideal.</p>
+            <p class="service-price">Revisão elétrica <strong>R$ 119</strong> + mão de obra</p>
+            <a href="#contato" class="card-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service-card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v18M6 8h12M9 3h6M8 21h8"/></svg>
+            </span>
+            <h3>Troca de óleo &amp; fluídos</h3>
+            <p>Troca com óleo de procedência e checklist completo de níveis e filtros.</p>
+            <p class="service-price">Óleo sintético <strong>R$ 89</strong> (mão de obra inclusa)</p>
+            <a href="#contato" class="card-link">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERIA ===== -->
+    <section class="section section-alt" id="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nossa estrutura</p>
+          <h2 class="section-title" id="galeria-title">Por dentro da <span class="text-accent">garagem</span></h2>
+          <p class="section-sub">São 600 m² de estrutura: 4 elevadores, área de funilaria e pintura, scanner multimarcas e sala de espera com café.</p>
+        </div>
+
+        <div class="grid gallery-grid">
+          <button type="button" class="gallery-item reveal" data-title="Área de elevadores" data-caption="4 elevadores hidráulicos de 2 e 4 postes, capacidade até 4,5 toneladas.">
+            <img src="img/g1-elevadores.jpg" alt="Mecânico consertando motor de carro com ferramentas" loading="lazy">
+            <span class="gallery-caption"><strong>Área de elevadores</strong><span>Elevadores 2 e 4 postes</span></span>
+          </button>
+          <button type="button" class="gallery-item reveal" data-title="Funilagem e pintura" data-caption="Cabine de pintura com filtros de partículas e secagem forçada.">
+            <img src="img/g2-pintura.jpg" alt="Cabine de pintura automotiva" loading="lazy">
+            <span class="gallery-caption"><strong>Funilagem e pintura</strong><span>Cabine com ar filtrado</span></span>
+          </button>
+          <button type="button" class="gallery-item reveal" data-title="Scanner multimarcas" data-caption="Balanceamento digital e alinhamento computadorizado 3D.">
+            <img src="img/g3-scanner.jpg" alt="Jogo de chaves e ferramentas de oficina" loading="lazy">
+            <span class="gallery-caption"><strong>Scanner multimarcas</strong><span>Diagnóstico completo</span></span>
+          </button>
+          <button type="button" class="gallery-item reveal" data-title="Sala de espera" data-caption="Ambiente climatizado com café, Wi-Fi e acompanhamento em tempo real do serviço.">
+            <img src="img/g4-sala-espera.jpg" alt="Equipamento de manutenção automotiva" loading="lazy">
+            <span class="gallery-caption"><strong>Sala de espera</strong><span>Café e Wi-Fi grátis</span></span>
+          </button>
+          <button type="button" class="gallery-item reveal" data-title="Área de montagem" data-caption="Rodas recalibradas, torque certo e revisão final em 40 pontos antes da entrega.">
+            <img src="img/g5-montagem.jpg" alt="Carro em estacionamento de oficina" loading="lazy">
+            <span class="gallery-caption"><strong>Área de montagem</strong><span>Revisão final de 15 pontos</span></span>
+          </button>
+          <button type="button" class="gallery-item reveal" data-title="Recepção" data-caption="Atendimento humanizado com orçamento digital e histórico do veículo.">
+            <img src="img/g6-recepcao.jpg" alt="Mecânico organizando ferramentas na bancada" loading="lazy">
+            <span class="gallery-caption"><strong>Recepção</strong><span>Orçamento digital</span></span>
+          </button>
+        </div>
+
+        <div class="gallery-note reveal">
+          Fotos reais das instalações da Garagem Prime — clicando, você pode abrir em tamanho natural.
+        </div>
+
+        <div class="insurers reveal">
+          <p>Credenciada para atendimento de seguradoras e frotas:</p>
+          <ul>
+            <li>Porto Seguro</li>
+            <li>Allianz</li>
+            <li>Bradesco Seguros</li>
+            <li>Tokio Marine</li>
+            <li>SulAmérica</li>
+            <li>MAPFRE</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section section-alt" id="sobre" aria-labelledby="sobre-title">
+      <div class="container sobre-grid">
+        <div class="sobre-visual reveal" aria-hidden="true">
+          <div class="sobre-card">
+            <div class="sobre-tools">
+              <svg viewBox="0 0 24 24"><path d="M14.5 5.5L19 10M4 20l6.5-6.5M12.5 3.5l3 3a2 2 0 0 1 0 2.8l-8 8L3 21l3.7-4.5 8-8a2 2 0 0 1 2.8 0l3 3"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M3 17l4-9 4 9M4.5 14.5h5M15 8h6M15 12h6M15 16h4"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a5 5 0 0 0-6.9 6.9L5 16v3h3l2.8-2.8a5 5 0 0 0 6.9-6.9l-2.5 2.5-2.2-2.2z"/></svg>
+            </div>
+            <p class="sobre-quote">“Cada carro que entra aqui sai mais confiável do que chegou. Esse é o nosso padrão.”</p>
+            <div class="sobre-author">
+              <span class="avatar">MR</span>
+              <div>
+                <strong>Marcos Ribeiro</strong>
+                <span>Fundador &amp; Mestre Mecânico</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-content">
+          <p class="eyebrow reveal">Por que a Garagem Prime</p>
+          <h2 class="section-title reveal" id="sobre-title">Oficina completa, <span class="text-accent">preço justo</span> e sem surpresas</h2>
+          <p class="reveal">São mais de 15 anos devolvendo clientes à estrada com segurança. Trabalhamos com ferramentas de diagnóstico modernas e peças de procedência, sempre com orçamento aprovado por você antes de qualquer serviço.</p>
+          <ul class="checklist reveal" >
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Orçamento detalhado e aprovado antes do reparo</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Garantia de 12 meses em mão de obra e peças</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Mecânicos certificados e em constante atualização</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Atendimento rápido com carro reserva mediante disponibilidade</li>
+          </ul>
+          <div class="sobre-badges reveal">
+            <div class="badge-chip"><strong>15+</strong><span>anos de estrada</span></div>
+            <div class="badge-chip"><strong>3.800+</strong><span>clientes ativos</span></div>
+            <div class="badge-chip"><strong>24h</strong><span>suporte de emergência</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESSO ===== -->
+    <section class="section" id="processo" aria-labelledby="processo-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2 class="section-title" id="processo-title">Seu carro em 4 passos <span class="text-accent">sem complicação</span></h2>
+        </div>
+        <ol class="steps reveal" >
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3>Agende o diagnóstico</h3>
+            <p>Escolha o melhor horário pelo formulário ou WhatsApp.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3>Receba o orçamento</h3>
+            <p>Análise completa com laudo e valores transparentes por item.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3>Aprove o reparo</h3>
+            <p>Nada é feito sem o seu OK. Acompanhe o andamento por fotos.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <h3>Retire com garantia</h3>
+            <p>Carro revisado, testado e com 12 meses de garantia.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PREÇOS ===== -->
+    <section class="section section-alt" id="precos" aria-labelledby="precos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Planos de manutenção</p>
+          <h2 class="section-title" id="precos-title">Tabela <span class="text-accent">simples</span>, sem letras miúdas</h2>
+          <p class="section-sub">Valores a partir de. Peças e impostos são detalhados no orçamento final, sempre aprovado por você.</p>
+        </div>
+        <div class="grid pricing-grid">
+          <article class="card price-card reveal">
+            <h3 class="price-name">Revisão Essencial</h3>
+            <p class="price"><span class="price-currency">R$</span>149<span class="price-period">/sessão</span></p>
+            <ul class="price-list" >
+              <li>Diagnóstico computadorizado</li>
+              <li>Troca de óleo e filtros</li>
+              <li>Checklist de 40 pontos</li>
+              <li>Relatório fotográfico</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline btn-block">Agendar agora</a>
+          </article>
+
+          <article class="card price-card featured reveal">
+            <span class="price-tag">Mais escolhido</span>
+            <h3 class="price-name">Preventiva Plus</h3>
+            <p class="price"><span class="price-currency">R$</span>249<span class="price-period">/sessão</span></p>
+            <ul class="price-list" >
+              <li>Tudo do plano Essencial</li>
+              <li>Revisão de freios e suspensão</li>
+              <li>Alinhamento e balanceamento</li>
+              <li>Prioridade no agendamento</li>
+            </ul>
+            <a href="#contato" class="btn btn-accent btn-block">Agendar agora</a>
+          </article>
+
+          <article class="card price-card reveal">
+            <h3 class="price-name">Manutenção Completa</h3>
+            <p class="price"><span class="price-currency">R$</span>399<span class="price-period">/sessão</span></p>
+            <ul class="price-list" >
+              <li>Tudo do plano Plus</li>
+              <li>Correias e componentes de desgaste</li>
+              <li>Testes em rodagem</li>
+              <li>Garantia estendida de 18 meses</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline btn-block">Agendar agora</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="section" id="depoimentos" aria-labelledby="depoimentos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Depoimentos</p>
+          <h2 class="section-title" id="depoimentos-title">Quem confia, <span class="text-accent">recomenda</span></h2>
+        </div>
+
+        <div class="testimonials reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <figure class="testimonial" aria-labelledby="t1">
+              <svg class="testimonial-quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7H6a2 2 0 0 0-2 2v3h4v3H4a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2zm10 0h-4a2 2 0 0 0-2 2v3h4v3h-4a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
+              <blockquote id="t1">“Levei meu SUV com um barulho que ninguém achava. A Garagem Prime diagnosticou em 40 minutos e me mandou fotos de tudo. Carro impecável até hoje.”</blockquote>
+              <figcaption>
+                <span class="avatar">CA</span>
+                <div>
+                  <strong>Carla Andrade</strong>
+                  <span>Cliente há 4 anos</span>
+                </div>
+                <span class="stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial" aria-labelledby="t2">
+              <svg class="testimonial-quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7H6a2 2 0 0 0-2 2v3h4v3H4a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2zm10 0h-4a2 2 0 0 0-2 2v3h4v3h-4a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
+              <blockquote id="t2">“Orçamento honesto e dentro do prazo. Eles avisam no WhatsApp cada etapa do serviço. É a única oficina que deixo mexer no carro da família.”</blockquote>
+              <figcaption>
+                <span class="avatar">RT</span>
+                <div>
+                  <strong>Rafael Teixeira</strong>
+                  <span>Cliente há 2 anos</span>
+                </div>
+                <span class="stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial" aria-labelledby="t3">
+              <svg class="testimonial-quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7H6a2 2 0 0 0-2 2v3h4v3H4a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2zm10 0h-4a2 2 0 0 0-2 2v3h4v3h-4a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
+              <blockquote id="t3">“Serviço de qualidade com preço justo. Minha empresa mantém toda a frota lá: 12 veículos, 3 anos sem nenhum retorno na garantia. Profissionalismo total.”</blockquote>
+              <figcaption>
+                <span class="avatar">JM</span>
+                <div>
+                  <strong>Jorge Mendes</strong>
+                  <span>Gestor de frota</span>
+                </div>
+                <span class="stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="testimonial-nav" role="tablist" aria-label="Controles do carrossel de depoimentos">
+            <button class="testimonial-dot" type="button" role="tab" aria-label="Depoimento 1" aria-selected="true"></button>
+            <button class="testimonial-dot" type="button" role="tab" aria-label="Depoimento 2" aria-selected="false"></button>
+            <button class="testimonial-dot" type="button" role="tab" aria-label="Depoimento 3" aria-selected="false"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2 class="section-title" id="faq-title">Perguntas <span class="text-accent">frequentes</span></h2>
+        </div>
+        <div class="faq reveal">
+          <details class="faq-item">
+            <summary>Quanto tempo leva um diagnóstico?</summary>
+            <p>O diagnóstico computadorizado leva em média de 30 a 60 minutos. Você recebe o laudo com fotos e o orçamento por item ainda no mesmo atendimento.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Vocês trabalham com peças originais?</summary>
+            <p>Trabalhamos com peças originais, genuínas e certificadas. A procedência é informada no orçamento e você escolhe a opção que melhor atende seu bolso e necessidade.</p>
+          </details>
+          <details class="faq-item">
+            <summary>O que cobre a garantia de 12 meses?</summary>
+            <p>Toda mão de obra e peças substituídas por nós. Caso o serviço apresente qualquer problema no período, o retorno e o reparo são 100% gratuitos.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Vocês atendem carros importados?</summary>
+            <p>Sim. Nossa equipe é treinada para veículos nacionais e importados, com scanners compatíveis com as principais marcas do mercado.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Preciso deixar o carro de um dia para o outro?</summary>
+            <p>Na maioria dos casos não. Serviços de revisão e troca de óleo são concluídos no mesmo dia. Reparos mais complexos costumam levar de 1 a 3 dias úteis.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Fale com a gente</p>
+          <h2 class="section-title" id="contato-title">Agende seu <span class="text-accent">diagnóstico</span></h2>
+          <p class="section-sub">Preencha o formulário e nossa equipe retorna em até 1 hora útil.</p>
+        </div>
+
+        <div class="grid contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-card">
+              <span class="card-icon small" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <div>
+                <strong>Endereço</strong>
+                <p>Av. das Oficinas, 1234 — Jardim Central<br>São Paulo / SP — CEP 01234-567</p>
+                <a class="info-link" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+das+Oficinas+1234+Jardim+Central+S%C3%A3o+Paulo" target="_blank" rel="noopener">Ver no Google Maps <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="card-icon small" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+              </span>
+              <div>
+                <strong>Telefone / WhatsApp</strong>
+                <p><a href="tel:+5511999990000">(11)&nbsp;99999&#8209;0000</a></p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="card-icon small" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+              </span>
+              <div>
+                <strong>Horário</strong>
+                <p>Seg–Sex: 8h às 18h · Sáb: 8h às 13h</p>
+              </div>
+            </div>
+            <a class="btn btn-whatsapp btn-block" href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20um%20diagn%C3%B3stico%20na%20Garagem%20Prime." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.5 1 .1.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.8 1.7.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4 0 .1 0 .7-.2 1.3z"/></svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <form class="card form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group" id="group-nome">
+                <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+                <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Ex.: Maria Silva" aria-describedby="err-nome">
+                <p class="field-error" id="err-nome"></p>
+              </div>
+              <div class="form-group" id="group-telefone">
+                <label for="telefone">Telefone <span aria-hidden="true">*</span></label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="Ex.: (11) 99999-0000" aria-describedby="err-telefone">
+                <p class="field-error" id="err-telefone"></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group" id="group-email">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@email.com" aria-describedby="err-email">
+                <p class="field-error" id="err-email"></p>
+              </div>
+              <div class="form-group" id="group-veiculo">
+                <label for="veiculo">Veículo</label>
+                <input type="text" id="veiculo" name="veiculo" placeholder="Ex.: Fiat Argo 2021" aria-describedby="err-veiculo">
+                <p class="field-error" id="err-veiculo"></p>
+              </div>
+            </div>
+            <div class="form-group" id="group-servico">
+              <label for="servico">Serviço desejado <span aria-hidden="true">*</span></label>
+              <select id="servico" name="servico" aria-describedby="err-servico">
+                <option value="">Selecione um serviço…</option>
+                <option>Diagnóstico computadorizado</option>
+                <option>Manutenção preventiva</option>
+                <option>Freios e suspensão</option>
+                <option>Motor e transmissão</option>
+                <option>Elétrica e injeção</option>
+                <option>Troca de óleo e fluidos</option>
+                <option>Outro</option>
+              </select>
+              <p class="field-error" id="err-servico"></p>
+            </div>
+            <div class="form-group" id="group-mensagem">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte o que seu carro está apresentando…" aria-describedby="err-mensagem"></textarea>
+              <p class="field-error" id="err-mensagem"></p>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="data">Data preferida <span class="optional">(opcional)</span></label>
+                <input type="date" id="data" name="data">
+                <p class="field-error" id="err-data"></p>
+              </div>
+              <div class="form-group">
+                <label for="periodo">Período <span class="optional">(opcional)</span></label>
+                <select id="periodo" name="periodo">
+                  <option value="">Tanto faz…</option>
+                  <option>Manhã (8h–12h)</option>
+                  <option>Tarde (13h–18h)</option>
+                  <option>Sábado de manhã</option>
+                </select>
+                <p class="field-error" id="err-periodo"></p>
+              </div>
+            </div>
+            <p class="form-note">Data e período são uma preferência — confirmamos o melhor horário disponível por telefone ou WhatsApp.</p>
+            <button type="submit" class="btn btn-accent btn-block btn-lg">Enviar solicitação</button>
+            <p class="form-note">Ao enviar, você concorda em ser contatado pela nossa equipe para retorno do agendamento.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio" aria-label="Garagem Prime — voltar ao topo">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#ff6a13"/>
+            <path d="M14 40l4-10a4 4 0 0 1 3.7-2.5h8.6L36 20h6l4.3 7.5H46l5.5 2.6a4 4 0 0 1 2.4 3.7V42h-6" fill="none" stroke="#0b0e14" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="21" cy="42" r="4.5" fill="#0b0e14"/>
+            <circle cx="43" cy="42" r="4.5" fill="#0b0e14"/>
+          </svg>
+          <span class="brand-text">Garagem<strong>Prime</strong></span>
+        </a>
+        <p>Oficina completa para o seu carro rodar seguro, bonito e confiável por muitos quilômetros.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4.5h-3A4 4 0 0 0 10 8.5V11H7v3.5h3V21h3.5v-6.5h3L17 11h-3.5V8.5z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 12s0-3.5-.5-5.2a2.8 2.8 0 0 0-2-2C17.9 4.3 12 4.3 12 4.3s-5.9 0-7.5.5a2.8 2.8 0 0 0-2 2C2 8.5 2 12 2 12s0 3.5.5 5.2a2.8 2.8 0 0 0 2 2c1.6.5 7.5.5 7.5.5s5.9 0 7.5-.5a2.8 2.8 0 0 0 2-2c.5-1.7.5-5.2.5-5.2z"/><path d="M10 15.5v-7l6 3.5z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Links rápidos">
+        <h3>Navegação</h3>
+        <ul >
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#precos">Preços</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <ul >
+          <li><a href="tel:+5511999990000">(11)&nbsp;99999&#8209;0000</a></li>
+          <li><a href="mailto:contato@garagemprime.com.br">contato@garagemprime.com.br</a></li>
+          <li>Av. das Oficinas, 1234</li>
+          <li>Jardim Central — São Paulo/SP</li>
+          <li>CEP 01234-567 — CNPJ 12.345.678/0001&#8209;90</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Horário</h3>
+        <ul >
+          <li>Seg — Sex: 8h às 18h</li>
+          <li>Sábado: 8h às 13h</li>
+          <li>Domingo: fechado</li>
+          <li class="footer-emergency">Emergência 24h: <a href="tel:+5511999990000">(11)&nbsp;99999&#8209;0000</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span id="year">2026</span> Garagem Prime — CNPJ 12.345.678/0001&#8209;90. Todos os direitos reservados.</p>
+      <p>Projeto de portfólio — site demonstrativo.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Fechar galeria">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lightbox-prev" type="button" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="lightbox-next" type="button" aria-label="Próxima foto">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+      <figcaption>
+        <strong id="lightboxTitle"></strong>
+        <span id="lightboxCaption"></span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
