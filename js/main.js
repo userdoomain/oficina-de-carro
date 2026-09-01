@@ -19,7 +19,7 @@
       "<g stroke='#ff6a13' stroke-width='14' stroke-linecap='round' stroke-linejoin='round' fill='none'>" +
       "<path d='M300 420l90-90M330 240a50 50 0 1 1 71 71l-21 21 90 90-50 50-90-90-21 21a50 50 0 1 1-71-71l-60-60 50-50z'/>" +
       "</g>" +
-      "<text x='400' y='540' text-anchor='middle' font-family='Rajdhani, sans-serif' font-size='34' fill='#8b94a6'>FOTO DA GARAGEM PRIME</text>" +
+      "<text x='400' y='540' text-anchor='middle' font-family='Rajdhani, sans-serif' font-size='34' fill='#8b94a6'>GARAGEM PRIME PHOTO</text>" +
       "</svg>"
     );
 
@@ -116,13 +116,13 @@
   function closeMenu() {
     navLinks.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
-    navToggle.setAttribute("aria-label", "Abrir menu");
+    navToggle.setAttribute("aria-label", "Open menu");
   }
 
   navToggle.addEventListener("click", function () {
     var open = navLinks.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", open ? "true" : "false");
-    navToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   });
 
   $$("#navLinks a").forEach(function (link) {
@@ -289,21 +289,21 @@
   var form = $("#contactForm");
 
   var validators = {
-    nome: function (v) { return v.trim().length >= 3 ? "" : "Informe seu nome completo (mín. 3 caracteres)."; },
+    nome: function (v) { return v.trim().length >= 3 ? "" : "Please enter your full name (min. 3 characters)."; },
     telefone: function (v) {
       var digits = v.replace(/\D/g, "");
-      return digits.length >= 10 ? "" : "Informe um telefone válido com DDD.";
+      return digits.length >= 10 ? "" : "Please enter a valid phone number with area code.";
     },
     email: function (v) {
       if (!v.trim()) return "";
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "E-mail inválido.";
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "Invalid e-mail address.";
     },
     veiculo: function (v) {
       var t = v.trim();
       if (!t) return "";
-      return t.length >= 3 ? "" : "Informe o modelo do veículo (mínimo 3 caracteres).";
+      return t.length >= 3 ? "" : "Please enter the vehicle model (minimum 3 characters).";
     },
-    servico: function (v) { return v ? "" : "Selecione um serviço."; }
+    servico: function (v) { return v ? "" : "Please select a service."; }
   };
 
   function validateField(name, value) {
@@ -332,28 +332,28 @@
 
     if (firstInvalid) {
       firstInvalid.focus();
-      showToast("Ops! Confira os campos destacados e tente novamente.", false);
+      showToast("Oops! Please review the highlighted fields and try again.", false);
       return;
     }
 
     var data = new FormData(form);
     var summary =
-      "Nome: " + data.get("nome") + "\n" +
-      "Telefone: " + data.get("telefone") + "\n" +
+      "Name: " + data.get("nome") + "\n" +
+      "Phone: " + data.get("telefone") + "\n" +
       "E-mail: " + (data.get("email") || "—") + "\n" +
-      "Veículo: " + (data.get("veiculo") || "—") + "\n" +
-      "Serviço: " + data.get("servico") + "\n" +
-      "Data preferida: " + (data.get("data") || "flexível") + "\n" +
-      "Período: " + (data.get("periodo") || "flexível") + "\n" +
-      "Mensagem: " + (data.get("mensagem") || "—");
+      "Vehicle: " + (data.get("veiculo") || "—") + "\n" +
+      "Service: " + data.get("servico") + "\n" +
+      "Preferred date: " + (data.get("data") || "flexible") + "\n" +
+      "Time of day: " + (data.get("periodo") || "flexible") + "\n" +
+      "Message: " + (data.get("mensagem") || "—");
 
-    console.log("[Garagem Prime] Nova solicitação de agendamento:\n" + summary);
+    console.log("[Garagem Prime] New booking request:\n" + summary);
 
     form.reset();
     ["nome", "telefone", "email", "veiculo", "servico", "mensagem", "data", "periodo"].forEach(function (name) {
       setError(name, "");
     });
-    showToast("Solicitação enviada! Nossa equipe retornará em até 1 hora útil.", true);
+    showToast("Request sent! Our team will get back to you within 1 business hour.", true);
   });
 
   ["nome", "telefone", "email", "veiculo", "servico", "mensagem", "data", "periodo"].forEach(function (name) {
